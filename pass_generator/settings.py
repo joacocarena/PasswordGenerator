@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'pass_generator.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default= os.environ.get('DATABASE_URL'),
+        default= 'postgresql://postgres:postgres@localhost:8000/postgres',
         conn_max_age=600,
     )
 }
